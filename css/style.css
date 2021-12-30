@@ -8,7 +8,7 @@
 
 body {
   display: flex;
-  padding: 10px;
+  padding: 0px 15px;
   min-height: 100vh;
   justify-content: center;
   align-items: center;
@@ -21,10 +21,15 @@ img {
   display: block;
   width: 100%;
 }
+button {
+    border: none;
+}
 .main {
   position: relative;
   display: flex;
   width: 800px;
+  min-width: 350px;
+
   background: #fff;
   border-radius: 15px;
 }
@@ -49,7 +54,7 @@ img {
 }
 .informations {
   display: flex;
-
+  padding-top: 1.0rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -118,6 +123,10 @@ img {
 .share-icon svg {
   display: block;
 }
+.share-icon:hover {
+  background: #9eafc28a;
+  transition: 200ms;
+}
 
 /*Active Class*/
 
@@ -163,7 +172,7 @@ img {
   font-weight: bold;
 }
 
-@media (max-width:450px){
+@media only screen and (max-width: 768px) {
   .main{
     flex-direction: column;
   
@@ -202,6 +211,7 @@ img {
    visibility: visible;
    opacity: 1;
    transform: translateY(0px);
+   
  }
  .container-2 {
   margin: 15px;
@@ -215,6 +225,7 @@ img {
 
  .share-information-mobile div{
   width: 25px;
+  cursor: pointer;
   
  }
 
